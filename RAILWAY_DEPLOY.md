@@ -22,6 +22,7 @@ https://api.telegram.org/bot<TELEGRAM_BOT_TOKEN>/getUpdates
 ```
 
 7. Найдите `message.chat.id` и сохраните его в Railway как `TELEGRAM_CHAT_ID`.
+8. Если получателей несколько, укажите их через запятую.
 
 ## 2. Railway
 
@@ -45,7 +46,7 @@ npm start
 
 ```text
 TELEGRAM_BOT_TOKEN=...
-TELEGRAM_CHAT_ID=...
+TELEGRAM_CHAT_ID=1581774364,964317402
 LEAD_SOURCE=YOSSA GitHub Pages
 ALLOWED_ORIGINS=https://yossafitness.ru,http://yossafitness.ru,https://www.yossafitness.ru,http://www.yossafitness.ru,https://isrmtnkv.github.io
 ```

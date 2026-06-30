@@ -217,17 +217,30 @@ function formatTelegramMessage(lead) {
 
 async function sendTelegramMessage(text) {
   if (isDryRun()) {
-    console.log("[TELEGRAM_DRY_RUN]", text);
+    console.log("[TELEGRAM_DRY_RUN]", getTelegramChatIds().join(", ") || "no chat ids", text);
     return;
   }
 
   const token = process.env.TELEGRAM_BOT_TOKEN;
-  const chatId = process.env.TELEGRAM_CHAT_ID;
+  const chatIds = getTelegramChatIds();
 
-  if (!token || !chatId) {
+  if (!token || chatIds.length === 0) {
     throw new Error("Telegram is not configured");
   }
 
+  const deliveries = await Promise.allSettled(
+    chatIds.map((chatId) => sendTelegramToChat(token, chatId, text))
+  );
+  const failedChatIds = deliveries
+    .map((result, index) => (result.status === "rejected" ? chatIds[index] : ""))
+    .filter(Boolean);
+
+  if (failedChatIds.length > 0) {
+    throw new Error(`Telegram sendMessage failed for chat id(s): ${failedChatIds.join(", ")}`);
+  }
+}
+
+async function sendTelegramToChat(token, chatId, text) {
   const payload = {
     chat_id: chatId,
     text,
@@ -235,7 +248,7 @@ async function sendTelegramMessage(text) {
     disable_web_page_preview: true,
   };
 
-  if (process.env.TELEGRAM_THREAD_ID) {
+  if (process.env.TELEGRAM_THREAD_ID && chatId.startsWith("-")) {
     payload.message_thread_id = Number(process.env.TELEGRAM_THREAD_ID);
   }
 
@@ -250,6 +263,13 @@ async function sendTelegramMessage(text) {
   if (!telegramResponse.ok || result.ok === false) {
     throw new Error(`Telegram sendMessage failed: ${result.description || telegramResponse.status}`);
   }
+}
+
+function getTelegramChatIds() {
+  return String(process.env.TELEGRAM_CHAT_IDS || process.env.TELEGRAM_CHAT_ID || "")
+    .split(",")
+    .map((chatId) => chatId.trim())
+    .filter(Boolean);
 }
 
 function sendJson(response, status, payload) {
@@ -350,7 +370,7 @@ function isAssetPath(filePath) {
 }
 
 function isTelegramConfigured() {
-  return Boolean(process.env.TELEGRAM_BOT_TOKEN && process.env.TELEGRAM_CHAT_ID);
+  return Boolean(process.env.TELEGRAM_BOT_TOKEN && getTelegramChatIds().length > 0);
 }
 
 function isDryRun() {
