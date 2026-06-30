@@ -3,491 +3,414 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#c75b2b">
+    <title>YÖSSA Women's Fitness</title>
     <meta
       name="description"
-      content="Fitness x Wellness - пространство для тренировок, восстановления и красоты."
+      content="YÖSSA Women's Fitness - женский фитнес-клуб с тренировками, пилатесом и зонами восстановления."
     >
-    <title>Fitness x Wellness</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    >
+    <link rel="icon" href="assets/yossa-logo.png">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <a class="skip-link" href="#main">Перейти к содержимому</a>
-    <div class="scroll-progress" aria-hidden="true"></div>
-    <div class="journey-rail" aria-hidden="true">
-      <span>вход</span>
-      <span>тело</span>
-      <span>ритм</span>
-      <span>заявка</span>
-      <i></i>
+    <div class="page-shell" id="top">
+      <header class="topbar" aria-label="Главная навигация">
+        <a class="brand" href="#top" aria-label="YÖSSA Women's Fitness">
+          <img src="assets/yossa-logo.png" alt="" aria-hidden="true">
+          <span>YÖSSA</span>
+        </a>
+
+        <nav class="main-nav" aria-label="Разделы сайта">
+          <a href="#formats">Тренировки</a>
+          <a href="#spaces">Пространства</a>
+          <a href="#memberships">Тарифы</a>
+          <a href="#reviews">Отзывы</a>
+          <a href="#visit">Заявка</a>
+          <a href="#contact">Контакт</a>
+        </nav>
+
+        <button class="hamburger" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Открыть меню">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="mobile-menu" id="mobile-menu" aria-label="Мобильное меню">
+          <a href="#formats">Тренировки</a>
+          <a href="#spaces">Пространства</a>
+          <a href="#memberships">Тарифы</a>
+          <a href="#reviews">Отзывы</a>
+          <a href="#visit">Заявка</a>
+          <a href="#contact">Контакт</a>
+          <a class="telegram-link" href="https://t.me/yossa_womens_fitness" target="_blank" rel="noreferrer">Telegram клуба</a>
+          <a class="telegram-link" href="https://t.me/yossa_admin" target="_blank" rel="noreferrer">Написать в Telegram</a>
+        </nav>
+
+        <a class="nav-cta" href="#contact">Гостевой визит</a>
+      </header>
+
+      <main>
+        <section class="hero" aria-labelledby="hero-title">
+          <img class="hero-image" src="assets/hero-entry.jpg" alt="Входная зона YÖSSA с мягким светом и ресепшеном">
+          <div class="hero-shade" aria-hidden="true"></div>
+          <div class="hero-rings" aria-hidden="true"></div>
+
+          <div class="hero-copy">
+            <p class="eyebrow">Women&apos;s fitness club</p>
+            <h1 id="hero-title">YÖSSA Women&apos;s Fitness</h1>
+            <p class="hero-lead">
+              Женский клуб для тренировок, пилатеса и восстановления в пространстве,
+              где интерьер работает так же бережно, как программа занятий.
+            </p>
+
+            <div class="hero-actions">
+              <a class="primary-button" href="#visit">Записаться на просмотр</a>
+              <a class="secondary-button" href="#spaces">Посмотреть зоны</a>
+            </div>
+          </div>
+
+          <div class="hero-pills" aria-label="Ключевые зоны клуба">
+            <span>Зал</span>
+            <span>Пилатес</span>
+            <span>Групповые</span>
+            <span>Хамам</span>
+          </div>
+
+          <div class="hero-note">
+            <span>7 зон</span>
+            <span>только для женщин</span>
+            <span>fitness + recovery</span>
+          </div>
+        </section>
+
+        <section class="section intro-section" aria-labelledby="intro-title">
+          <div class="section-kicker">Концепция</div>
+          <div class="intro-grid">
+            <div>
+              <h2 id="intro-title">Фитнес без шума, давления и случайных деталей</h2>
+            </div>
+            <div class="intro-copy">
+              <p>
+                YÖSSA собрана как приватный женский маршрут: сначала тренировка,
+                затем восстановление, душ, уход и спокойное возвращение в день.
+              </p>
+              <p>
+                Визуальный язык клуба строится на терракотовых арках, теплом свете,
+                мягких тканях и точной навигации между зонами.
+              </p>
+              <div class="intro-stats" aria-label="YÖSSA в цифрах">
+                <div>
+                  <strong>1500+</strong>
+                  <span>клиентов</span>
+                </div>
+                <div>
+                  <strong>50+</strong>
+                  <span>тренировок в неделю</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="feature-strip concept-gallery" aria-label="Главные пространства YÖSSA">
+            <article class="feature-card feature-card-wide">
+              <img src="assets/training-gym.jpg" alt="Тренажерный зал YÖSSA с дорожками и светлой зоной пилатеса">
+              <div>
+                <p>Тренировки</p>
+                <h2>Зал и пилатес</h2>
+              </div>
+            </article>
+
+            <article class="feature-card">
+              <img src="assets/aerial-group.jpg" alt="Групповая студия YÖSSA с гамаками">
+              <div>
+                <p>Группы</p>
+                <h2>Классы в малых группах</h2>
+              </div>
+            </article>
+
+            <article class="feature-card">
+              <img src="assets/hamam.jpg" alt="Теплая хамам-зона YÖSSA с подсветкой">
+              <div>
+                <p>Recovery</p>
+                <h2>Хамам после нагрузки</h2>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section formats-section" id="formats" aria-labelledby="formats-title">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker">Типы тренировок</p>
+              <h2 id="formats-title">Тренировки под настроение, силу и восстановление</h2>
+            </div>
+            <div class="segment-control" role="tablist" aria-label="Форматы занятий">
+              <button class="is-active" type="button" role="tab" aria-selected="true" data-program="gym">Зал</button>
+              <button type="button" role="tab" aria-selected="false" data-program="pilates">Пилатес</button>
+              <button type="button" role="tab" aria-selected="false" data-program="aerial">Aerial</button>
+              <button type="button" role="tab" aria-selected="false" data-program="stretch">Stretch</button>
+              <button type="button" role="tab" aria-selected="false" data-program="recovery">Recovery</button>
+            </div>
+          </div>
+
+          <div class="program-panel">
+            <figure class="program-photo">
+              <img data-program-image src="assets/training-gym.jpg" alt="Тренажерный зал YÖSSA">
+              <figcaption data-program-caption>Светлый зал с кардио, силовой зоной и приватным ритмом занятий.</figcaption>
+            </figure>
+            <div class="program-card">
+              <div class="program-copy">
+                <p class="eyebrow" data-program-eyebrow>Для силы и тонуса</p>
+                <h3 data-program-title>Тренажерный зал</h3>
+                <p data-program-text>
+                  Работа с оборудованием, кардио и функциональные упражнения для тонуса,
+                  осанки и уверенного прогресса без лишнего давления.
+                </p>
+              </div>
+              <ul class="program-list" data-program-list>
+                <li>силовая база</li>
+                <li>кардио и функциональные блоки</li>
+                <li>сопровождение тренера</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="section memberships-section" id="memberships" aria-labelledby="memberships-title">
+          <p class="section-kicker">Абонементы</p>
+          <div class="membership-hero">
+            <h2 id="memberships-title">Выберите формат, который поддержит ваш ритм.</h2>
+            <p>
+              От знакомства с клубом до полного доступа к тренировкам,
+              восстановлению и персональному сопровождению.
+            </p>
+          </div>
+
+          <div class="membership-grid horizontal-scroll" data-horizontal-scroll>
+            <article class="membership-card">
+              <h3>START</h3>
+              <p>Мягкий старт: 8 посещений для знакомства с залом, студиями и своим темпом.</p>
+              <div class="membership-tags">
+                <span>8 посещений</span>
+                <span>стартовый маршрут</span>
+              </div>
+              <div class="membership-price">8 900 ₽</div>
+              <small>на 1 месяц</small>
+              <a class="primary-button tariff-button" href="#visit">Выбрать</a>
+            </article>
+
+            <article class="membership-card is-popular">
+              <div class="popular-badge">Популярный</div>
+              <h3>FITNESS</h3>
+              <p>Самый удобный формат для регулярных тренировок без ограничений по залу.</p>
+              <div class="membership-tags">
+                <span>безлимитный зал</span>
+                <span>замеры прогресса</span>
+              </div>
+              <div class="membership-price">10 900 ₽</div>
+              <small>на 1 месяц</small>
+              <a class="primary-button tariff-button" href="#visit">Выбрать</a>
+            </article>
+
+            <article class="membership-card">
+              <h3>WELLNESS</h3>
+              <p>Тренировки плюс восстановление в хамаме, чтобы нагрузка ощущалась легче.</p>
+              <div class="membership-tags">
+                <span>зал + хамам</span>
+                <span>ритуалы восстановления</span>
+              </div>
+              <div class="membership-price">14 900 ₽</div>
+              <small>на 1 месяц</small>
+              <a class="primary-button tariff-button" href="#visit">Выбрать</a>
+            </article>
+
+            <article class="membership-card premium-card">
+              <h3>PREMIUM</h3>
+              <p>Полный доступ ко всем зонам, пилатесу Reformer и премиальному сопровождению.</p>
+              <div class="membership-tags">
+                <span>все зоны клуба</span>
+                <span>Reformer и сопровождение</span>
+              </div>
+              <div class="membership-price">19 900 ₽</div>
+              <small>на 1 месяц</small>
+              <a class="secondary-button tariff-button" href="#visit">Выбрать</a>
+            </article>
+          </div>
+        </section>
+
+        <section class="section spaces-section" id="spaces" aria-labelledby="spaces-title">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker">Пространства</p>
+              <h2 id="spaces-title">Маршрут клуба</h2>
+            </div>
+            <p class="section-note">
+              В кадре только ключевые зоны, чтобы сайт оставался собранным и не превращался в полный альбом проекта.
+            </p>
+          </div>
+
+          <div class="space-grid">
+            <article class="space-card space-card-large">
+              <img src="assets/hero-entry.jpg" alt="Ресепшен и входная группа YÖSSA">
+              <div>
+                <span>01</span>
+                <h3>Входная группа</h3>
+                <p>Теплый прием, мягкий свет и первый визуальный код клуба.</p>
+              </div>
+            </article>
+
+            <article class="space-card">
+              <img src="assets/training-gym.jpg" alt="Тренажерная зона YÖSSA">
+              <div>
+                <span>02</span>
+                <h3>Зал</h3>
+                <p>Силовая работа, кардио и точная эргономика.</p>
+              </div>
+            </article>
+
+            <article class="space-card">
+              <img src="assets/aerial-group.jpg" alt="Групповая студия YÖSSA">
+              <div>
+                <span>03</span>
+                <h3>Групповые</h3>
+                <p>Движение, растяжка и занятия в малых группах.</p>
+              </div>
+            </article>
+
+            <article class="space-card">
+              <img src="assets/massage.jpg" alt="Массажный кабинет YÖSSA">
+              <div>
+                <span>04</span>
+                <h3>Массаж</h3>
+                <p>Кабинет для ухода, релиза и восстановления.</p>
+              </div>
+            </article>
+
+            <article class="space-card">
+              <img src="assets/locker.jpg" alt="Раздевалка YÖSSA">
+              <div>
+                <span>05</span>
+                <h3>Раздевалка</h3>
+                <p>Продуманная зона перед тренировкой и после нее.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section reviews-section" id="reviews" aria-labelledby="reviews-title">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker">Отзывы</p>
+              <h2 id="reviews-title">Что отмечают участницы клуба</h2>
+            </div>
+            <p class="section-note">
+              Короткие отзывы оставлены как блок-заготовка для реальных цитат после запуска.
+            </p>
+          </div>
+
+          <div class="reviews-slider horizontal-scroll" data-horizontal-scroll>
+            <article class="review-card">
+              <p>
+                "Наконец-то зал, где не хочется торопиться уйти. После тренировки можно спокойно
+                восстановиться и привести себя в порядок."
+              </p>
+              <span>Марина, 34</span>
+            </article>
+            <article class="review-card">
+              <p>
+                "Понравилось, что тренер сразу объяснил маршрут: зал, пилатес, хамам. Все понятно
+                и без ощущения хаоса."
+              </p>
+              <span>Екатерина, 29</span>
+            </article>
+            <article class="review-card">
+              <p>
+                "Очень красивое пространство. Для меня это важно: приходишь заниматься, а вокруг
+                тихо, тепло и по-женски бережно."
+              </p>
+              <span>Алина, 41</span>
+            </article>
+            <article class="review-card">
+              <p>
+                "В YÖSSA нравится баланс: можно прийти на интенсивную тренировку, а потом без спешки
+                перейти в восстановление."
+              </p>
+              <span>София, 37</span>
+            </article>
+            <article class="review-card">
+              <p>
+                "Очень бережная атмосфера. Меня не подгоняют, но при этом тренировки собраны и дают
+                результат."
+              </p>
+              <span>Дарья, 32</span>
+            </article>
+          </div>
+        </section>
+
+        <section class="section visit-section" id="visit" aria-labelledby="visit-title">
+          <div class="visit-copy">
+            <p class="section-kicker">Гостевой визит</p>
+            <h2 id="visit-title">Оставьте заявку на просмотр клуба</h2>
+            <p>
+              Администратор подберет удобное время, расскажет о тарифах и поможет выбрать
+              первый формат тренировки.
+            </p>
+          </div>
+
+          <form class="contact-form" novalidate>
+            <label class="honeypot" aria-hidden="true">
+              <span>Сайт</span>
+              <input name="website" autocomplete="off" tabindex="-1">
+            </label>
+            <label>
+              <span>Имя</span>
+              <input name="name" autocomplete="name" required placeholder="Анна">
+            </label>
+            <label>
+              <span>Телефон</span>
+              <input name="phone" autocomplete="tel" required placeholder="+7 999 000 00 00">
+            </label>
+            <label>
+              <span>Интерес</span>
+              <select name="interest">
+                <option>Гостевой визит</option>
+                <option>Пилатес</option>
+                <option>Групповые занятия</option>
+                <option>Wellness и массаж</option>
+              </select>
+            </label>
+            <button class="primary-button form-button" type="submit">Отправить заявку</button>
+            <p class="form-message" role="status" aria-live="polite"></p>
+          </form>
+        </section>
+
+        <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+          <div class="contact-copy">
+            <p class="section-kicker">Контакты</p>
+            <h2 id="contact-title">Как нас найти</h2>
+            <p>
+              Напишите в Telegram или позвоните, чтобы уточнить адрес, расписание и свободное
+              время для знакомства с клубом.
+            </p>
+          </div>
+
+          <div class="contact-list" aria-label="Контакты YÖSSA">
+            <a href="tel:+79990000000">+7 999 000 00 00</a>
+            <a href="https://t.me/yossa_womens_fitness" target="_blank" rel="noreferrer">Telegram клуба</a>
+            <a href="https://t.me/yossa_admin" target="_blank" rel="noreferrer">Написать администратору</a>
+            <span>Москва, адрес клуба уточняется</span>
+          </div>
+
+          <div class="map-card" aria-label="Карта расположения клуба">
+            <div class="map-lines" aria-hidden="true"></div>
+            <div class="map-marker">
+              <strong>YÖSSA</strong>
+              <span>Women&apos;s Fitness</span>
+            </div>
+          </div>
+        </section>
+      </main>
     </div>
 
-    <header class="site-header" aria-label="Основная навигация">
-      <a class="logo" href="#top" aria-label="Fitness Wellness">
-        <span class="logo-mark">n</span>
-      </a>
-      <nav class="desktop-nav" aria-label="Разделы сайта">
-        <a href="#about">О клубе</a>
-        <a href="#spaces">Пространства</a>
-        <a href="#schedule">Расписание</a>
-        <a href="#plans">Абонементы</a>
-        <a href="#contacts">Контакты</a>
-      </nav>
-      <a class="header-cta" href="#trial">Записаться</a>
-      <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false">
-        <span></span>
-        <span></span>
-      </button>
-    </header>
-
-    <nav class="mobile-nav" aria-label="Мобильное меню" hidden>
-      <a href="#about">О клубе</a>
-      <a href="#spaces">Пространства</a>
-      <a href="#schedule">Расписание</a>
-      <a href="#plans">Абонементы</a>
-      <a href="#contacts">Контакты</a>
-    </nav>
-
-    <main id="main">
-      <section class="design-wall" id="top" aria-label="Fitness wellness">
-        <div class="hero-panel reveal">
-          <img
-            class="hero-image"
-            src="assets/entrance.jpg"
-            alt="Входная зона wellness-клуба с мягким светом и круглой стойкой ресепшн"
-          >
-          <div class="hero-overlay"></div>
-          <div class="hero-content">
-            <p class="micro">Клуб нового ритма</p>
-            <h1>Fitness<br><span>x</span><br>Wellness</h1>
-            <p class="hero-copy">Пространство для тренировок, восстановления и красоты</p>
-            <div class="hero-actions">
-              <a class="button button-primary" href="#trial">Записаться на пробное</a>
-              <a class="button button-ghost light" href="#plans">Купить абонемент</a>
-            </div>
-          </div>
-          <div class="hero-pages" aria-label="Визуальные слайды">
-            <button class="hero-page is-active" type="button" data-hero="assets/entrance.jpg">01</button>
-            <button class="hero-page" type="button" data-hero="assets/entrance-03.jpg">02</button>
-            <button class="hero-page" type="button" data-hero="assets/hammam-04.jpg">03</button>
-          </div>
-        </div>
-
-      </section>
-
-      <section class="about-section band" id="about">
-        <div class="about-copy reveal">
-          <p class="section-kicker">О клубе</p>
-          <h2>Не просто фитнес-клуб. Место, где тренировки становятся частью образа жизни.</h2>
-          <p>
-            Мы создали пространство, где сочетаются современный фитнес, восстановление,
-            внимание к телу и эстетика спокойного премиального сервиса.
-          </p>
-          <dl class="stats">
-            <div>
-              <dt>1500+</dt>
-              <dd>клиентов</dd>
-            </div>
-            <div>
-              <dt>50+</dt>
-              <dd>тренировок в неделю</dd>
-            </div>
-            <div>
-              <dt>7</dt>
-              <dd>пространств для здоровья</dd>
-            </div>
-          </dl>
-        </div>
-
-        <figure class="about-phone reveal">
-          <div class="phone-video-shell" aria-label="Видео атмосферы wellness-тренировки">
-            <span class="phone-hardware phone-volume" aria-hidden="true"></span>
-            <span class="phone-hardware phone-action" aria-hidden="true"></span>
-            <span class="phone-hardware phone-power" aria-hidden="true"></span>
-            <span class="phone-camera-dot" aria-hidden="true"></span>
-            <div class="phone-video-status">
-              <span></span>
-              <span></span>
-            </div>
-            <video
-              class="phone-video"
-              src="assets/wellness-phone-video.mp4"
-              poster="assets/group-05.jpg"
-              autoplay
-              muted
-              loop
-              playsinline
-              preload="metadata"
-            ></video>
-            <div class="phone-video-copy">
-              <span>Wellness rhythm</span>
-              <strong>Движение без спешки</strong>
-            </div>
-          </div>
-        </figure>
-
-      </section>
-
-      <section class="spaces-section band" id="spaces">
-        <div class="section-head reveal">
-          <p class="section-kicker">Пространства клуба</p>
-          <h2>Каждая зона спроектирована под свой темп: от силовых тренировок до восстановления.</h2>
-        </div>
-        <div class="kinetic-orbit" aria-hidden="true">
-          <span class="orbit-ring orbit-ring-a"></span>
-          <span class="orbit-ring orbit-ring-b"></span>
-          <span class="orbit-ring orbit-ring-c"></span>
-          <span class="orbit-prism"></span>
-          <span class="orbit-shadow"></span>
-        </div>
-        <div class="space-grid">
-          <article class="space-card reveal" data-gallery="gym" role="button" tabindex="0">
-            <span class="space-tag">Сила</span>
-            <img src="assets/gym-pilates-01.jpg" alt="Тренажерный зал">
-            <div>
-              <h3>Тренажерный зал</h3>
-              <p>Современное оборудование и свободное движение.</p>
-            </div>
-          </article>
-          <article class="space-card reveal" data-gallery="pilates" role="button" tabindex="0">
-            <span class="space-tag">Контроль</span>
-            <img src="assets/gym-pilates-06.jpg" alt="Зона Pilates Reformer">
-            <div>
-              <h3>Пилатес Reformer</h3>
-              <p>Персональный подход и внимание к деталям.</p>
-            </div>
-          </article>
-          <article class="space-card reveal" data-gallery="group" role="button" tabindex="0">
-            <span class="space-tag">Движение</span>
-            <img src="assets/group.jpg" alt="Студия групповых тренировок">
-            <div>
-              <h3>Групповые студии</h3>
-              <p>Два зала для групповых тренировок.</p>
-            </div>
-          </article>
-          <article class="space-card reveal" data-gallery="hammam" role="button" tabindex="0">
-            <span class="space-tag">Тепло</span>
-            <img src="assets/hammam.jpg" alt="Хамам и лаунж-зона">
-            <div>
-              <h3>Хамам</h3>
-              <p>Традиционный хамам для полного восстановления.</p>
-            </div>
-          </article>
-          <article class="space-card reveal" data-gallery="massage" role="button" tabindex="0">
-            <span class="space-tag">Восстановление</span>
-            <img src="assets/massage-01.jpg" alt="Массажный кабинет">
-            <div>
-              <h3>Массажный кабинет</h3>
-              <p>Тихое пространство для заботы о теле.</p>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="programs-plans band split-band" id="schedule">
-        <div class="programs-object" aria-hidden="true">
-          <span class="programs-arc programs-arc-a"></span>
-          <span class="programs-arc programs-arc-b"></span>
-          <span class="programs-core"></span>
-          <span class="programs-pulse"></span>
-        </div>
-        <img
-          class="liquid-art liquid-art-programs"
-          src="assets/liquid-glass-sculpture.png"
-          alt=""
-          aria-hidden="true"
-        >
-        <div class="directions reveal">
-          <div class="directions-head">
-            <p class="section-kicker">Направления</p>
-            <h2>Выберите тренировку по состоянию тела, а не по шаблону.</h2>
-            <p>Каждое направление раскрывается в отдельном сценарии: от спокойной точности до динамичной нагрузки.</p>
-          </div>
-          <div class="direction-grid">
-            <a class="direction-card" href="#trial" data-direction="pilates">
-              <img src="assets/gym-pilates-04.jpg" alt="Pilates Reformer">
-              <span class="direction-label"><span>Пилатес Reformer</span><small>точность, осанка, глубокие мышцы</small></span>
-            </a>
-            <a class="direction-card" href="#trial" data-direction="functional">
-              <img src="assets/gym-pilates-12.jpg" alt="Функциональный тренинг">
-              <span class="direction-label"><span>Функциональный тренинг</span><small>сила и выносливость без хаоса</small></span>
-            </a>
-            <a class="direction-card" href="#trial" data-direction="stretching">
-              <img src="assets/group-03.jpg" alt="Растяжка">
-              <span class="direction-label"><span>Растяжка</span><small>мягкое восстановление</small></span>
-            </a>
-            <a class="direction-card" href="#trial" data-direction="yoga">
-              <img src="assets/group-05.jpg" alt="Йога">
-              <span class="direction-label"><span>Йога</span><small>баланс и дыхание</small></span>
-            </a>
-            <a class="direction-card" href="#trial" data-direction="aero">
-              <img src="assets/group.jpg" alt="Аэро">
-              <span class="direction-label"><span>Аэро</span><small>воздушная амплитуда</small></span>
-            </a>
-            <a class="direction-card" href="#trial" data-direction="personal">
-              <img src="assets/gym-pilates-16.jpg" alt="Персональные тренировки">
-              <span class="direction-label"><span>Персональные тренировки</span><small>цель, техника, сопровождение</small></span>
-            </a>
-          </div>
-        </div>
-
-        <div class="plans reveal" id="plans">
-          <p class="section-kicker">Абонементы</p>
-          <div class="plans-intro">
-            <h2>Выберите формат, который поддержит ваш ритм.</h2>
-            <p>От знакомства с клубом до полного доступа к тренировкам, восстановлению и персональному сопровождению.</p>
-          </div>
-          <div class="plan-grid">
-            <article class="plan-card">
-              <h3>Start</h3>
-              <p>Мягкий старт: 8 посещений для знакомства с залом, студиями и своим темпом.</p>
-              <ul class="plan-features">
-                <li>8 посещений</li>
-                <li>стартовый маршрут</li>
-              </ul>
-              <strong>8 900 ₽</strong>
-              <span>на 1 месяц</span>
-              <button type="button" data-plan="Start">Выбрать</button>
-            </article>
-            <article class="plan-card popular">
-              <span class="plan-badge">Популярный</span>
-              <h3>Fitness</h3>
-              <p>Самый удобный формат для регулярных тренировок без ограничений по залу.</p>
-              <ul class="plan-features">
-                <li>безлимитный зал</li>
-                <li>замеры прогресса</li>
-              </ul>
-              <strong>10 900 ₽</strong>
-              <span>на 1 месяц</span>
-              <button type="button" data-plan="Fitness">Выбрать</button>
-            </article>
-            <article class="plan-card">
-              <h3>Wellness</h3>
-              <p>Тренировки плюс восстановление в хамаме, чтобы нагрузка ощущалась легче.</p>
-              <ul class="plan-features">
-                <li>зал + хамам</li>
-                <li>ритуалы восстановления</li>
-              </ul>
-              <strong>14 900 ₽</strong>
-              <span>на 1 месяц</span>
-              <button type="button" data-plan="Wellness">Выбрать</button>
-            </article>
-            <article class="plan-card featured">
-              <h3>Premium</h3>
-              <p>Полный доступ ко всем зонам, пилатесу Reformer и премиальному сопровождению.</p>
-              <ul class="plan-features">
-                <li>все зоны клуба</li>
-                <li>Reformer и сопровождение</li>
-              </ul>
-              <strong>19 900 ₽</strong>
-              <span>на 1 месяц</span>
-              <button type="button" data-plan="Premium">Выбрать</button>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="gallery-testimonials band">
-        <div class="gallery-block reveal">
-          <div class="gallery-copy">
-            <p class="section-kicker">Галерея клуба</p>
-            <h2>Материалы, свет и детали работают на ощущение спокойной энергии.</h2>
-            <p>Собрали ключевые кадры пространств: тренировки, восстановление, раздевалки и зоны после занятий.</p>
-          </div>
-          <img class="gallery-object" src="assets/gallery-reformer-object.png" alt="" aria-hidden="true">
-          <div class="gallery-mosaic" aria-label="Галерея изображений">
-            <button type="button" data-gallery="hammam"><img src="assets/hammam-04.jpg" alt="Зона восстановления"></button>
-            <button type="button" data-gallery="entrance"><img src="assets/entrance-02.jpg" alt="Входная группа"></button>
-            <button type="button" data-gallery="gym"><img src="assets/gym-pilates-10.jpg" alt="Зал для тренировок"></button>
-            <button type="button" data-gallery="locker"><img src="assets/locker.jpg" alt="Раздевалка"></button>
-            <button type="button" data-gallery="group"><img src="assets/group-04.jpg" alt="Групповая студия"></button>
-            <button type="button" data-gallery="shower"><img src="assets/shower.jpg" alt="Душевая зона"></button>
-          </div>
-        </div>
-
-        <div class="testimonial reveal" aria-label="Отзывы">
-          <div class="testimonial-head">
-            <p class="section-kicker">Отзывы</p>
-            <h2>Люди возвращаются не только за тренировкой, а за состоянием после нее.</h2>
-          </div>
-          <div class="reviews-track">
-            <article class="review-card is-visible">
-              <blockquote>Это место стало моим любимым ритуалом заботы о себе.</blockquote>
-              <div class="person">
-                <img src="assets/massage-03.jpg" alt="">
-                <span>Анна, 32 года</span>
-              </div>
-            </article>
-            <article class="review-card is-visible">
-              <blockquote>Наконец-то клуб, где тренировка и восстановление ощущаются как один сценарий.</blockquote>
-              <div class="person">
-                <img src="assets/group-05.jpg" alt="">
-                <span>Мария, 28 лет</span>
-              </div>
-            </article>
-            <article class="review-card is-visible">
-              <blockquote>Очень нравится атмосфера: красиво, спокойно, и тренеры действительно внимательные.</blockquote>
-              <div class="person">
-                <img src="assets/gym-pilates-16.jpg" alt="">
-                <span>Екатерина, 35 лет</span>
-              </div>
-            </article>
-            <article class="review-card">
-              <blockquote>Пилатес на реформере стал моим главным способом держать тело в тонусе без перегруза.</blockquote>
-              <div class="person">
-                <img src="assets/gym-pilates-04.jpg" alt="">
-                <span>Ольга, 41 год</span>
-              </div>
-            </article>
-            <article class="review-card">
-              <blockquote>После зала всегда иду в хамам. Это редкое место, где хочется задержаться.</blockquote>
-              <div class="person">
-                <img src="assets/hammam-04.jpg" alt="">
-                <span>Ирина, 30 лет</span>
-              </div>
-            </article>
-            <article class="review-card">
-              <blockquote>Команда быстро подобрала формат занятий, и я без стресса вернулась к регулярности.</blockquote>
-              <div class="person">
-                <img src="assets/entrance-04.jpg" alt="">
-                <span>Софья, 37 лет</span>
-              </div>
-            </article>
-          </div>
-          <div class="review-controls" aria-label="Переключение отзывов">
-            <button class="review-arrow" type="button" data-review-direction="prev" aria-label="Предыдущие отзывы"></button>
-            <div class="review-dots" aria-hidden="true"><span class="is-active"></span><span></span></div>
-            <button class="review-arrow next" type="button" data-review-direction="next" aria-label="Следующие отзывы"></button>
-          </div>
-        </div>
-
-        <form class="lead-form reveal" id="trial" novalidate>
-          <p class="section-kicker">Записаться на пробное занятие</p>
-          <h2>Подберем тренировку под ваш ритм</h2>
-          <label>
-            <span>Имя</span>
-            <input type="text" name="name" autocomplete="name" required>
-          </label>
-          <label>
-            <span>Телефон</span>
-            <input type="tel" name="phone" autocomplete="tel" required>
-          </label>
-          <label>
-            <span>Выберите направление</span>
-            <select name="interest" required>
-              <option value="">Направление</option>
-              <option>Тренажерный зал</option>
-              <option>Pilates Reformer</option>
-              <option>Групповые тренировки</option>
-              <option>Хамам и восстановление</option>
-              <option>Массаж</option>
-            </select>
-          </label>
-          <button class="button button-primary wide" type="submit">Записаться</button>
-          <p class="form-note">Наш менеджер свяжется с вами и подберет удобное время.</p>
-          <p class="form-status" role="status" aria-live="polite"></p>
-        </form>
-
-      </section>
-
-      <section class="contacts-section band" id="contacts">
-        <div class="contacts-info reveal">
-          <div class="contacts-copy">
-            <p class="section-kicker">Контакты</p>
-            <address>
-              г. Москва, Пресненская наб., 12<br>
-              Башня Федерация, этаж 46
-            </address>
-            <a href="tel:+74951234567">+7 (495) 123-45-67</a>
-            <div class="socials" aria-label="Социальные сети">
-              <a href="#" aria-label="Telegram">Tg</a>
-              <a href="#" aria-label="Instagram">In</a>
-              <a href="#" aria-label="WhatsApp">Wa</a>
-            </div>
-          </div>
-          <div class="hours">
-            <p class="section-kicker">Режим работы</p>
-            <dl>
-              <div><dt>Пн - Пт</dt><dd>07:00 - 23:00</dd></div>
-              <div><dt>Сб - Вс</dt><dd>09:00 - 22:00</dd></div>
-            </dl>
-          </div>
-        </div>
-        <div class="map-card reveal" aria-label="Карта">
-          <div class="map-pin"></div>
-        </div>
-      </section>
-    </main>
-
-    <dialog class="gallery-dialog" aria-label="Галерея пространства">
-      <button class="dialog-close" type="button" aria-label="Закрыть галерею"></button>
-      <div class="dialog-layout">
-        <figure>
-          <img class="dialog-image" src="assets/entrance.jpg" alt="">
-        </figure>
-        <div class="dialog-copy">
-          <p class="section-kicker dialog-kicker">Пространство</p>
-          <h2 class="dialog-title">Fitness x Wellness</h2>
-          <p class="dialog-text">Больше кадров пространства доступны в этой галерее.</p>
-          <div class="dialog-thumbs" aria-label="Миниатюры"></div>
-        </div>
-      </div>
-    </dialog>
-
-    <dialog class="direction-dialog" aria-label="Описание направления">
-      <button class="dialog-close direction-dialog-close" type="button" aria-label="Закрыть описание"></button>
-      <div class="direction-dialog-layout">
-        <figure>
-          <img class="direction-dialog-image" src="assets/gym-pilates-04.jpg" alt="">
-        </figure>
-        <div class="direction-dialog-copy">
-          <p class="section-kicker">Направление</p>
-          <h2 class="direction-dialog-title">Пилатес Reformer</h2>
-          <p class="direction-dialog-text"></p>
-          <ul class="direction-dialog-list"></ul>
-          <div class="direction-dialog-thumbs" aria-label="Фотографии направления"></div>
-          <a class="button button-primary" href="#trial">Записаться</a>
-        </div>
-      </div>
-    </dialog>
-
-    <dialog class="plan-dialog" aria-label="Заявка на абонемент">
-      <button class="dialog-close plan-dialog-close" type="button" aria-label="Закрыть форму"></button>
-      <form class="plan-form" novalidate>
-        <p class="section-kicker">Абонемент</p>
-        <h2 class="plan-dialog-title">Выбрать абонемент</h2>
-        <input type="hidden" name="plan" value="">
-        <label>
-          <span>Имя</span>
-          <input type="text" name="name" autocomplete="name" required>
-        </label>
-        <label>
-          <span>Телефон</span>
-          <input type="tel" name="phone" autocomplete="tel" required>
-        </label>
-        <label>
-          <span>Направление</span>
-          <select name="interest" required>
-            <option value="">Направление</option>
-            <option>Тренажерный зал</option>
-            <option>Пилатес Reformer</option>
-            <option>Групповые тренировки</option>
-            <option>Хамам и восстановление</option>
-            <option>Массаж</option>
-          </select>
-        </label>
-        <button class="button button-primary wide" type="submit">Отправить заявку</button>
-        <p class="form-note">Мы свяжемся с вами и подберем удобное время.</p>
-        <p class="form-status" role="status" aria-live="polite"></p>
-      </form>
-    </dialog>
-
+    <script src="config.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

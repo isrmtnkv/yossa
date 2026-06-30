@@ -1,0 +1,14 @@
+{
+  "name": "yossa-site",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "dev": "TELEGRAM_DRY_RUN=true node server.mjs",
+    "check": "node --check server.mjs && node --check script.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
